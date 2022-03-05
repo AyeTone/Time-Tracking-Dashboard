@@ -17,10 +17,34 @@ export const CardInfo = styled.div`
   border-bottom-left-radius: 0.7rem;
 
   padding: 2rem;
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  &:active {
+    background-color: var(--Font);
+  }
 `;
-export const Heading = styled.div``;
+
+export const Heading = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 export const Title = styled.h2``;
-export const Dots = styled.div``;
+
+export const Dots = styled.img`
+  width: 8%;
+
+  opacity: 0.7;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    filter: brightness(20);
+  }
+`;
 export const Times = styled.div``;
 export const CurrentTime = styled.p``;
 export const PrevTime = styled.p``;

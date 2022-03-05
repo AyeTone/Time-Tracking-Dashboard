@@ -10,13 +10,15 @@ import {
   Title,
 } from "./CardStyles";
 
+import Ellipsis from "../../../images/icon-ellipsis.svg";
+
 const Card = ({ title, current, prev }) => {
   return (
     <Container>
       <CardInfo>
         <Heading>
           <Title>{title}</Title>
-          <Dots></Dots>
+          <Dots src={Ellipsis} />
         </Heading>
         <Times>
           <CurrentTime> {current}hrs </CurrentTime>
