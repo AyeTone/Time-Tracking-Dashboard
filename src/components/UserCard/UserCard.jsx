@@ -1,6 +1,8 @@
 import {
   Container,
   Report,
+  Time,
+  TimeFrames,
   User,
   UserImage,
   UserInfo,
@@ -17,6 +19,11 @@ const UserCard = () => {
           <UserName>Jeremy Robson</UserName>
         </UserInfo>
       </User>
+      <TimeFrames>
+        <Time>Daily</Time>
+        <Time>Weekly</Time>
+        <Time>Monthly</Time>
+      </TimeFrames>
     </Container>
   );
 };

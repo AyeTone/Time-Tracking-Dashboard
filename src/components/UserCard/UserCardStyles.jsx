@@ -40,3 +40,24 @@ export const UserName = styled.h1`
   font-weight: lighter;
   font-size: 2.6rem;
 `;
+
+export const TimeFrames = styled.div`
+  display: flex;
+  justify-content: space-around;
+  gap: 7rem;
+
+  padding: 2rem;
+`;
+
+export const Time = styled.p`
+  font-size: 2rem;
+  font-weight: lighter;
+  opacity: 0.7;
+
+  transition: 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
