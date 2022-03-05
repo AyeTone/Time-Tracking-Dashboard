@@ -4,7 +4,7 @@ export const Container = styled.div`
   background-color: var(--CardDF);
   border-radius: var(--borderRad);
 
-  width: 90%;
+  width: 100%;
 `;
 
 export const User = styled.div`
