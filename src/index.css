@@ -1,5 +1,5 @@
 :root {
-  --blue: hsl(246, 80%, 60%);
+  --UserCard: hsl(246, 80%, 60%);
   --work: hsl(15, 100%, 70%);
   --play: hsl(195, 74%, 62%);
   --study: hsl(348, 100%, 68%);
@@ -7,10 +7,10 @@
   --social: hsl(264, 64%, 52%);
   --self-care: hsl(43, 84%, 65%);
   --Verydarkblue: hsl(226, 43%, 10%);
-  --Darkblue: hsl(235, 46%, 20%);
-  --Desaturatedblue: hsl(235, 45%, 61%);
+  --CardDF: hsl(235, 46%, 20%);
+  --Font: hsl(235, 45%, 61%);
   --PaleBlue: hsl(236, 100%, 87%);
-  --borderrounding: 1.2rem;
+  --borderRad: 1.2rem;
 }
 
 
@@ -26,11 +26,16 @@ body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
   min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: var(--Verydarkblue);  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
 }
