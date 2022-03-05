@@ -1,12 +1,22 @@
+import { useState } from "react";
 import Card from "./Card/Card";
 import { Container } from "./CardsStyle";
+import Data from "../../data.json";
 
 const Cards = () => {
-  return (
-    <Container>
-      <Card />
-    </Container>
-  );
+  const [Type, setType] = useState(Data);
+
+  let cards = Type.map((card) => (
+    <Card
+      key={card.title}
+      title={card.title}
+      current={card.timeframes.daily.current}
+      prev={card.timeframes.daily.previous}
+    />
+  ));
+
+  console.log(cards);
+  return <Container>{cards}</Container>;
 };
 
 export default Cards;

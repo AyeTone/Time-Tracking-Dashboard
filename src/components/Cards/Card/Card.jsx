@@ -10,17 +10,17 @@ import {
   Title,
 } from "./CardStyles";
 
-const Card = () => {
+const Card = ({ title, current, prev }) => {
   return (
     <Container>
       <CardInfo>
         <Heading>
-          <Title></Title>
+          <Title>{title}</Title>
           <Dots></Dots>
         </Heading>
         <Times>
-          <CurrentTime></CurrentTime>
-          <PrevTime>Last Week - </PrevTime>
+          <CurrentTime> {current}hrs </CurrentTime>
+          <PrevTime>Last Week - {prev}hrs </PrevTime>
         </Times>
       </CardInfo>
     </Container>

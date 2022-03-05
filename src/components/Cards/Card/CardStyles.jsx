@@ -10,7 +10,6 @@ export const Container = styled.div`
 
 export const CardInfo = styled.div`
   width: 100%;
-  height: 80%;
 
   background-color: var(--CardDF);
   border-radius: var(--borderRad);
