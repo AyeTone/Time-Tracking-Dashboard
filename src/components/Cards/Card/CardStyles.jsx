@@ -16,7 +16,7 @@ export const CardInfo = styled.div`
   border-bottom-right-radius: 0.7rem;
   border-bottom-left-radius: 0.7rem;
 
-  padding: 2rem;
+  padding: 1.8rem;
   cursor: pointer;
 
   transition: 0.25s;
