@@ -44,7 +44,7 @@ export const UserName = styled.h1`
 export const TimeFrames = styled.div`
   display: flex;
   justify-content: space-around;
-  gap: 7rem;
+  gap: 3rem;
 
   padding: 2rem;
 `;
