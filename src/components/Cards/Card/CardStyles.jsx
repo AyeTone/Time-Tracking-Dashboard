@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  background-color: orange;
+  background-color: ${(props) => props.bg};
   padding-top: 3.5rem;
 
   border-radius: var(--borderRad);
@@ -13,8 +13,6 @@ export const CardInfo = styled.div`
 
   background-color: var(--CardDF);
   border-radius: var(--borderRad);
-  border-bottom-right-radius: 0.7rem;
-  border-bottom-left-radius: 0.7rem;
 
   padding: 1.8rem;
   cursor: pointer;
@@ -45,6 +43,9 @@ export const Dots = styled.img`
     filter: brightness(20);
   }
 `;
+
 export const Times = styled.div``;
+
 export const CurrentTime = styled.p``;
+
 export const PrevTime = styled.p``;

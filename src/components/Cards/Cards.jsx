@@ -12,6 +12,7 @@ const Cards = () => {
       title={card.title}
       current={card.timeframes.daily.current}
       prev={card.timeframes.daily.previous}
+      bg={card.bg}
     />
   ));
 

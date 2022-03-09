@@ -12,9 +12,9 @@ import {
 
 import Ellipsis from "../../../images/icon-ellipsis.svg";
 
-const Card = ({ title, current, prev }) => {
+const Card = ({ title, current, prev, bg }) => {
   return (
-    <Container>
+    <Container bg={bg}>
       <CardInfo>
         <Heading>
           <Title>{title}</Title>
