@@ -36,7 +36,6 @@ const Cards = () => {
     />
   ));
 
-  console.log(cards);
   return <Container>{cards}</Container>;
 };
 

@@ -9,23 +9,40 @@ import {
   UserName,
 } from "./UserCardStyles";
 
-const UserCard = () => {
-  const timeframes = [
-    {
-      time: "Daily",
-      on: false,
-    },
-    {
-      time: "Weekly",
-      on: false,
-    },
-    {
-      time: "Hourly",
-      on: false,
-    },
-  ];
+import { useState, useContext } from "react";
+import { TimeFramesContext } from "../../Context/timeFrameContext";
 
-  let times = timeframes.map((time) => <Time> {time.time} </Time>);
+const UserCard = () => {
+  const { timeFrames, settimeFrames } = useContext(TimeFramesContext);
+
+  const times = timeFrames.map((time, index) => (
+    <Time key={time.time} className={time.time}>
+      {" "}
+      {time.time}{" "}
+    </Time>
+  ));
+
+  const toggleActive = (e) => {
+    let newArr = [...timeFrames];
+
+    const value = e.target;
+
+    if (value.matches(".Daily")) {
+      newArr[0].isActive = true;
+      newArr[1].isActive = false;
+      newArr[2].isActive = false;
+    } else if (value.matches(".Weekly")) {
+      newArr[0].isActive = false;
+      newArr[1].isActive = true;
+      newArr[2].isActive = false;
+    } else if (value.matches(".Hourly")) {
+      newArr[0].isActive = false;
+      newArr[1].isActive = false;
+      newArr[2].isActive = true;
+    }
+
+    console.log(timeFrames);
+  };
 
   return (
     <Container>
@@ -36,7 +53,7 @@ const UserCard = () => {
           <UserName>Jeremy Robson</UserName>
         </UserInfo>
       </User>
-      <TimeFrames>{times}</TimeFrames>
+      <TimeFrames onClick={toggleActive}>{times}</TimeFrames>
     </Container>
   );
 };
