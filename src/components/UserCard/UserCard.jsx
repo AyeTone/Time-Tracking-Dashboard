@@ -10,6 +10,23 @@ import {
 } from "./UserCardStyles";
 
 const UserCard = () => {
+  const timeframes = [
+    {
+      time: "Daily",
+      on: false,
+    },
+    {
+      time: "Weekly",
+      on: false,
+    },
+    {
+      time: "Hourly",
+      on: false,
+    },
+  ];
+
+  let times = timeframes.map((time) => <Time> {time.time} </Time>);
+
   return (
     <Container>
       <User>
@@ -19,11 +36,7 @@ const UserCard = () => {
           <UserName>Jeremy Robson</UserName>
         </UserInfo>
       </User>
-      <TimeFrames>
-        <Time>Daily</Time>
-        <Time>Weekly</Time>
-        <Time>Monthly</Time>
-      </TimeFrames>
+      <TimeFrames>{times}</TimeFrames>
     </Container>
   );
 };
