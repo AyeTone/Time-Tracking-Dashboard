@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  BgImage,
   CardInfo,
   Container,
   CurrentTime,
@@ -12,9 +13,10 @@ import {
 
 import Ellipsis from "../../../images/icon-ellipsis.svg";
 
-const Card = ({ title, current, prev, bg }) => {
+const Card = ({ title, current, prev, bg, image }) => {
   return (
     <Container bg={bg}>
+      <BgImage src={image} />
       <CardInfo>
         <Heading>
           <Title>{title}</Title>

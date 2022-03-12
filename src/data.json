@@ -74,6 +74,7 @@
   {
     "title": "Social",
     "bg": "hsl(264, 64%, 52%)",
+    "image": "",
     "timeframes": {
       "daily": {
         "current": 1,

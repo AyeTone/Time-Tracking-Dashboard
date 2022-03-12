@@ -8,6 +8,8 @@ export const Container = styled.div`
   border-radius: var(--borderRad);
 `;
 
+export const BgImage = styled.img``;
+
 export const CardInfo = styled.div`
   width: 100%;
 
