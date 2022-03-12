@@ -13,7 +13,7 @@ import { useState, useContext } from "react";
 import { TimeFramesContext } from "../../Context/timeFrameContext";
 
 const UserCard = () => {
-  const { timeFrames, settimeFrames } = useContext(TimeFramesContext);
+  const { timeFrames, setTimeFrames } = useContext(TimeFramesContext);
 
   const times = timeFrames.map((time, index) => (
     <Time key={time.time} className={time.time}>
@@ -40,6 +40,8 @@ const UserCard = () => {
       newArr[1].isActive = false;
       newArr[2].isActive = true;
     }
+
+    setTimeFrames(newArr);
 
     console.log(timeFrames);
   };

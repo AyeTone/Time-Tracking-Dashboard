@@ -4,7 +4,7 @@ import { TimeFramesContext } from "./Context/timeFrameContext";
 import { useState } from "react";
 
 function App() {
-  const [timeFrames, settimeFrames] = useState([
+  const [timeFrames, setTimeFrames] = useState([
     {
       time: "Daily",
       isActive: true,
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <TimeFramesContext.Provider value={{ timeFrames, settimeFrames }}>
+      <TimeFramesContext.Provider value={{ timeFrames, setTimeFrames }}>
         <UserCard />
         <Cards />
       </TimeFramesContext.Provider>
