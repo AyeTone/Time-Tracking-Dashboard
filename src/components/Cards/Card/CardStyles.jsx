@@ -1,4 +1,11 @@
+import { keyframes } from "styled-components";
 import styled from "styled-components";
+
+const scaleUp = keyframes`
+  from {
+    transform: scale(.2);
+  }
+`;
 
 export const Container = styled.div`
   position: relative;
@@ -44,7 +51,7 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 `;
 
 export const Dots = styled.img`

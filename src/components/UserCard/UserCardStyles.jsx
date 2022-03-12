@@ -50,7 +50,7 @@ export const TimeFrames = styled.div`
 `;
 
 export const Time = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: lighter;
   opacity: 0.7;
 
