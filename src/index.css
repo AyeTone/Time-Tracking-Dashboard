@@ -1,6 +1,6 @@
 :root {
   --UserCard: hsl(246, 80%, 60%);
-  --work: hsl(15, 100%, 70%);
+  --work: #ff8c66;
   --play: hsl(195, 74%, 62%);
   --study: hsl(348, 100%, 68%);
   --exercise: hsl(145, 58%, 55%);
