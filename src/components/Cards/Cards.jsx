@@ -12,11 +12,11 @@ import Social from "../../images/icon-social.svg";
 import SelfCare from "../../images/icon-self-care.svg";
 
 const Cards = () => {
-  const [Type, setType] = useState(Data);
+  const [type, setType] = useState(Data);
   const { timeFrames } = useContext(TimeFramesContext);
   console.log(timeFrames);
 
-  let cards = Type.map((card) => (
+  let cards = type.map((card) => (
     <Card
       key={card.title}
       title={card.title}

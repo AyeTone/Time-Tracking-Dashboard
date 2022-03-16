@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { tablet } from "../../responsive";
 
 export const Container = styled.div`
   background-color: var(--CardDF);
   border-radius: var(--borderRad);
 
   width: 100%;
+
+  ${tablet({
+    width: "30%",
+  })}
 `;
 
 export const User = styled.div`
@@ -16,6 +21,14 @@ export const User = styled.div`
 
   background-color: var(--UserCard);
   border-radius: var(--borderRad);
+
+  ${tablet({
+    padding: "1.8rem 1.5rem",
+
+    flexDirection: "column",
+    alignItems: "unset",
+    gap: "1.5rem",
+  })}
 `;
 
 export const UserImage = styled.img`
@@ -23,22 +36,40 @@ export const UserImage = styled.img`
   border: 2px solid white;
   border-radius: 50%;
   margin-left: 3rem;
+
+  ${tablet({
+    width: "48%",
+    marginLeft: "unset",
+  })}
 `;
 
 export const UserInfo = styled.div`
   display: grid;
   gap: 0.8rem;
+
+  ${tablet({
+    gap: "0.3rem",
+  })}
 `;
 
 export const Report = styled.p`
   font-weight: 100;
   font-size: 1.3rem;
   opacity: 0.7;
+
+  ${tablet({
+    fontSize: "11px",
+  })}
 `;
 
 export const UserName = styled.h1`
-  font-weight: lighter;
+  font-weight: 100;
   font-size: 2.6rem;
+
+  ${tablet({
+    fontSize: "1.5rem",
+    marginBottom: "1.5rem",
+  })}
 `;
 
 export const TimeFrames = styled.div`
@@ -47,6 +78,13 @@ export const TimeFrames = styled.div`
   gap: 3rem;
 
   padding: 2rem;
+
+  ${tablet({
+    padding: "1rem 1.5rem 1.5rem",
+
+    flexDirection: "column",
+    gap: "1rem",
+  })}
 `;
 
 export const Time = styled.p`
@@ -60,4 +98,8 @@ export const Time = styled.p`
   &:hover {
     opacity: 1;
   }
+
+  ${tablet({
+    fontSize: "12px",
+  })}
 `;

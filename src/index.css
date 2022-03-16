@@ -10,7 +10,7 @@
   --CardDF: hsl(235, 46%, 20%);
   --Font: hsl(235, 45%, 61%);
   --CardHover: hsl(236, 100%, 87%);
-  --borderRad: 1.2rem;
+  --borderRad: 1rem;
 }
 
 
@@ -41,4 +41,14 @@ body {
   
   width: 90%;
   margin: 2rem auto;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .App {
+    max-width: 740px;
+
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }

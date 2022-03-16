@@ -14,7 +14,7 @@ function App() {
       isActive: false,
     },
     {
-      time: "Hourly",
+      time: "Monthly",
       isActive: false,
     },
   ]);

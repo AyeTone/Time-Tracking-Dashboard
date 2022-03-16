@@ -1,12 +1,6 @@
 import { keyframes } from "styled-components";
 import styled from "styled-components";
 
-const scaleUp = keyframes`
-  from {
-    transform: scale(.2);
-  }
-`;
-
 export const Container = styled.div`
   position: relative;
   overflow: hidden;
