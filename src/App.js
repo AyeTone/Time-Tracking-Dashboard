@@ -2,6 +2,7 @@ import Cards from "./components/Cards/Cards";
 import UserCard from "./components/UserCard/UserCard";
 import { TimeFramesContext } from "./Context/timeFrameContext";
 import { useState } from "react";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [timeFrames, setTimeFrames] = useState([
@@ -20,12 +21,13 @@ function App() {
   ]);
 
   return (
-    <div className="App">
-      <TimeFramesContext.Provider value={{ timeFrames, setTimeFrames }}>
+    <TimeFramesContext.Provider value={{ timeFrames, setTimeFrames }}>
+      <div className="App">
         <UserCard />
         <Cards />
-      </TimeFramesContext.Provider>
-    </div>
+      </div>
+      <Footer />
+    </TimeFramesContext.Provider>
   );
 }
 

@@ -99,6 +99,10 @@ export const Time = styled.p`
     opacity: 1;
   }
 
+  &:active {
+    opacity: 1;
+  }
+
   ${tablet({
     fontSize: "12px",
   })}
