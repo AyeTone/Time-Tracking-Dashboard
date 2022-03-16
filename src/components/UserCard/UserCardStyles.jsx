@@ -23,11 +23,11 @@ export const User = styled.div`
   border-radius: var(--borderRad);
 
   ${tablet({
-    padding: "1.8rem 1.5rem",
+    padding: "1.5rem 1.2rem",
 
     flexDirection: "column",
     alignItems: "unset",
-    gap: "1.5rem",
+    gap: "1.3rem",
   })}
 `;
 
@@ -38,7 +38,7 @@ export const UserImage = styled.img`
   margin-left: 3rem;
 
   ${tablet({
-    width: "48%",
+    width: "40%",
     marginLeft: "unset",
   })}
 `;
@@ -48,7 +48,7 @@ export const UserInfo = styled.div`
   gap: 0.8rem;
 
   ${tablet({
-    gap: "0.3rem",
+    gap: "3px",
   })}
 `;
 
@@ -68,7 +68,7 @@ export const UserName = styled.h1`
 
   ${tablet({
     fontSize: "1.5rem",
-    marginBottom: "1.5rem",
+    marginBottom: "1.8rem",
   })}
 `;
 
@@ -80,7 +80,7 @@ export const TimeFrames = styled.div`
   padding: 2rem;
 
   ${tablet({
-    padding: "1rem 1.5rem 1.5rem",
+    padding: "1rem 1.2rem 1.2rem",
 
     flexDirection: "column",
     gap: "1rem",
