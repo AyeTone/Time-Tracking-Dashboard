@@ -1,5 +1,6 @@
 {
   "name": "time-tracking-dashboard",
+  "homepage": "https://ayetone.github.io/Time-Tracking-Dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
