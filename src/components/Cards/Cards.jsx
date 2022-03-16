@@ -14,7 +14,6 @@ import SelfCare from "../../images/icon-self-care.svg";
 const Cards = () => {
   const [type, setType] = useState(Data);
   const { timeFrames } = useContext(TimeFramesContext);
-  console.log(timeFrames);
 
   let cards = type.map((card) => (
     <Card
