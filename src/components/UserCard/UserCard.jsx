@@ -19,12 +19,11 @@ const UserCard = () => {
   const times = timeFrames.map((time) => {
     return (
       <>
-        {time.isActive && (
+        {time.isActive ? (
           <ActiveTime key={time.time} className={time.time}>
             {time.time}
           </ActiveTime>
-        )}
-        {!time.isActive && (
+        ) : (
           <Time key={time.time} className={time.time}>
             {time.time}
           </Time>

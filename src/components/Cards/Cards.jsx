@@ -15,40 +15,44 @@ const Cards = () => {
   const [type, setType] = useState(Data);
   const { timeFrames } = useContext(TimeFramesContext);
 
-  let cards = type.map((card) => (
-    <Card
-      key={card.title}
-      title={card.title}
-      current={
-        timeFrames[0].isActive === true
-          ? card.timeframes.daily.current
-          : timeFrames[1].isActive === true
-          ? card.timeframes.weekly.current
-          : card.timeframes.monthly.current
-      }
-      prev={
-        timeFrames[0].isActive === true
-          ? card.timeframes.daily.previous
-          : timeFrames[1].isActive === true
-          ? card.timeframes.weekly.previous
-          : card.timeframes.monthly.previous
-      }
-      bg={card.bg}
-      image={
-        card.title === "Work"
-          ? Work
-          : card.title === "Play"
-          ? Play
-          : card.title === "Study"
-          ? Study
-          : card.title === "Exercise"
-          ? Exercise
-          : card.title === "Social"
-          ? Social
-          : SelfCare
-      }
-    />
-  ));
+  let cards = type.map((card) => {
+    let title = card.title;
+
+    return (
+      <Card
+        key={title}
+        title={title}
+        current={
+          timeFrames[0].isActive === true
+            ? card.timeframes.daily.current
+            : timeFrames[1].isActive === true
+            ? card.timeframes.weekly.current
+            : card.timeframes.monthly.current
+        }
+        prev={
+          timeFrames[0].isActive === true
+            ? card.timeframes.daily.previous
+            : timeFrames[1].isActive === true
+            ? card.timeframes.weekly.previous
+            : card.timeframes.monthly.previous
+        }
+        bg={card.bg}
+        image={
+          title === "Work"
+            ? Work
+            : title === "Play"
+            ? Play
+            : title === "Study"
+            ? Study
+            : title === "Exercise"
+            ? Exercise
+            : title === "Social"
+            ? Social
+            : SelfCare
+        }
+      />
+    );
+  });
 
   return <Container>{cards}</Container>;
 };
